@@ -1,0 +1,7 @@
+{
+  "name": "Atm_Project",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
