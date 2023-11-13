@@ -1,0 +1,98 @@
+ion-content {
+    --ion-background-color: white;
+}
+
+ion-header {
+    position: absolute;
+    text-align: center;
+}
+
+ion-toolbar {
+    --ion-background-color: white;
+}
+
+.signin {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-div {
+    font-family: 'Verdana';
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .welcome {
+        font-size: 28px;
+        color: #0a0a0a;
+    }
+
+    span {
+        color: lightgray;
+        width: 80%;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+.signin-card {
+    padding: 20px;
+    width: 95%;
+    background-color: #fbfbfb;
+}
+
+.signin-inputs {
+    padding: 10px;
+}
+
+.input-title {
+    font-family: 'Verdana';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: black;
+}
+
+.input {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid #1A6D78;
+    font-family: 'Verdana';
+    color: black !important;
+    background: #FFF;
+    // opacity: 0.5;
+    font-size: 18px;
+    margin-top: 5px;
+    --padding-start: 10px;
+    --padding-end: 10px;
+}
+
+.signin-btns {
+    margin-top: 20px;
+    text-align: center;
+
+    ion-button {
+        --border-radius: 10px;
+        width: 200px;
+    }
+}
+
+.no-account {
+    text-align: center;
+    button {
+        color: #1A6D78;
+        background-color: transparent;
+        margin-top: 30px;
+    }
+}

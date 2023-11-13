@@ -1,0 +1,36 @@
+<ion-header class="ion-no-border"><!--[translucent]="true"-->
+  <ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="signin">
+    <div class="welcome-div">
+      <div class="welcome"><b>Welcome</b></div>
+      <span>Are you not tired of waiting long queues at the ATM?... guess what online atm is here for you.</span>
+    </div>
+    <ion-card class="signin-card">
+      <form [formGroup]="signinForm" (ngSubmit)="onSubmit()">
+        <div class="signin-inputs">
+          <span class="input-title" color="dark">Email</span>
+          <ion-input class="input" [clearInput]="true" type="text" formControlName="email" name="email"
+            placeholder="Enter your email" required />
+        </div>
+        <div class="signin-inputs">
+          <span class="input-title">Password</span>
+          <ion-input class="input" [clearInput]="true" type="password" formControlName="password" name="password"
+            placeholder="Enter password" required />
+        </div>
+
+        <div class="signin-btns">
+          <ion-button type="submit" [disabled]="!signinForm.valid" fill="solid" shape="round">Sign-In</ion-button>
+        </div>
+      </form>
+      <div class="no-account">
+        <span>Do not have an account? </span><button (click)="navigateToSignUp()" fill="clear">Create a new
+          account.</button>
+      </div>
+    </ion-card>
+
+  </div>
+</ion-content>

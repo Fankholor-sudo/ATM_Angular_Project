@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-icon name="chevron-back" class="back-btn" (click)="navigateToHomePage()"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="withdraw-div">
+    <div class="withdraw-title">Withdrawal</div>
+    <ion-item lines="none">
+      <ion-label position="stacked" class="input-label">Account</ion-label>
+      <ion-input class="custom-input">
+        <ion-select interface="popover" placeholder="Select Account" [(ngModel)]="selectedAccount">
+          <ion-select-option *ngFor="let account of accounts" [value]="account">
+            {{ account.AccountType }}
+          </ion-select-option>
+        </ion-select>
+      </ion-input>
+      <ion-label *ngIf="selectedAccount" position="stacked" class="balance-label">Balance: {{selectedAccount.Balance}}</ion-label>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="stacked" class="input-label">Amount</ion-label>
+      <ion-input type="number" class="custom-input" [(ngModel)]="withdrawAmount">R</ion-input>
+    </ion-item>
+
+    <ion-button expand="full" (click)="showConfirmation()">Withdraw</ion-button>
+  </div>
+</ion-content>

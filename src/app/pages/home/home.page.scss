@@ -1,0 +1,45 @@
+.account-box {
+  --ion-background-color: #1A6D78;
+}
+
+.custom-menu-icon {
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.home-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 22px;
+  color: #1A6D78;
+}
+
+.account-type {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.account-number {
+  color: white;
+  font-size: 16px;;
+}
+
+.account-balance {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+ion-item {
+  margin: -10px;
+}
+
+ion-button {
+  --ion-color-primary:#D9D9D9;
+  --background-activated: #1A6D78;
+  color: black;
+  height: 100px;
+}

@@ -1,0 +1,44 @@
+.back-btn {
+  height: 25px;
+  width: 25px;
+  color: black;
+}
+
+.transactions-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 22px;
+  color: #1A6D78;
+}
+
+.transaction-box {
+  height: 90px;
+
+  ion-card-content {
+    ion-list {
+      ion-item {
+        margin-top: -12px;
+        ion-note {
+          font-size: 14px;
+        }
+
+        .account-type {
+          font-size: 16px;
+          font-weight: bold;
+          color: #1A6D78;
+        }
+
+        .account-amount {
+          // font-weight: bold;s
+          font-size: 16px;
+          color: #01673e;
+          &.negative {
+            color: #cf1b1b;
+          }
+        }
+      }
+    }
+  }
+}
+

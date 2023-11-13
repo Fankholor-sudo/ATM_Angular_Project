@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-icon name="chevron-back" class="back-btn" (click)="navigateToHomePage()"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="transactions-title">Transactions</div>
+  <ion-card class="transaction-box" *ngFor="let transaction of transactions">
+    <ion-card-content>
+      <ion-list lines="none">
+        <ion-item>
+          <ion-note class="account-type">{{ transaction.AccountType }}</ion-note>
+          <ion-note slot="end" class="account-amount" [ngClass]="{'negative': transaction.Amount < 0}">R{{ transaction.Amount }}</ion-note>
+        </ion-item>
+
+        <ion-item>
+          <ion-note class="account-date">{{ transaction.Date }}</ion-note>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-icon name="chevron-back" class="back-btn" (click)="navigateToHomePage()"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="payment-div">
+    <div class="pay-title">Payment</div>
+    <ion-item lines="none">
+      <ion-label position="stacked" class="input-label">Beneficiary Name</ion-label>
+      <ion-input class="custom-input" [(ngModel)]="beneficiaryName"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="stacked" class="input-label">Beneficiary Surname</ion-label>
+      <ion-input class="custom-input" [(ngModel)]="beneficiarySurname"></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="stacked" class="input-label">Account number</ion-label>
+      <ion-input class="custom-input" [(ngModel)]="accountNumber"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="stacked" class="input-label">From Account</ion-label>
+      <ion-input class="custom-input">
+        <ion-select interface="popover" placeholder="Select Account" [(ngModel)]="selectedFromAccount">
+          <ion-select-option *ngFor="let account of accounts" [value]="account">
+            {{ account.AccountType }}
+          </ion-select-option>
+        </ion-select>
+      </ion-input>
+      <ion-label *ngIf="selectedFromAccount" position="stacked" class="balance-label">Balance: {{selectedFromAccount.Balance}}</ion-label>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label position="stacked" class="input-label">Amount</ion-label>
+      <ion-input type="number" class="custom-input" [(ngModel)]="amount">R</ion-input>
+    </ion-item>
+
+    <ion-button expand="full" (click)="showConfirmation()">Pay</ion-button>
+  </div>
+</ion-content>

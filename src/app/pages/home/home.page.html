@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-icon slot="end" name="ellipsis-vertical" class="custom-menu-icon" (click)="showOptions()"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="home-title">Home</div>
+  <ion-card class="account-box" *ngFor="let account of accounts">
+    <ion-card-content>
+      <ion-list lines="none">
+        <ion-item>
+          <ion-note class="account-type">{{ account.AccountType}}</ion-note>
+        </ion-item>
+
+        <ion-item>
+          <ion-note class="account-number">{{ account.AccountNumber }}</ion-note>
+        </ion-item>
+
+        <ion-item>
+          <ion-note slot="end" class="account-balance">{{ account.Balance }}</ion-note>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-button expand="full" class="withdrawal-btn" (click)="navigateToWithdrawalPage()">Withdrawal</ion-button>
+        </ion-col>
+        <ion-col size="6">
+          <ion-button expand="full" class="transfer-btn" (click)="navigateToTransferPage()">Transfer</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-button expand="full" class="pay-btn" (click)="navigateToPaymentPage()">Payment</ion-button>
+        </ion-col>
+        <ion-col size="6">
+          <ion-button expand="full" class="transactions-btn" (click)="navigateToTransactionsPage()">Transactions</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+</ion-content>
+
