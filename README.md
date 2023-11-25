@@ -1,4 +1,4 @@
-# ATM_Angular_Project (Web app, Android and IOS App)
+# ATM_Angular_Project
 
 <!-- TABLE OF CONTENTS -->
 ### Table of Contents
@@ -28,6 +28,7 @@ allowing them to perform various transactions, view balances, and manage their a
 
 ## Getting Started
 #### Connecting Artisans with Remote Jobs
+#### Web app, Android and IOS App
 
 ### Features
 * <b>User Authentication:</b> Secure sign-up and login functionalities for users.
