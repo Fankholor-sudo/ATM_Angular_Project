@@ -91,22 +91,22 @@ allowing them to perform various transactions, view balances, and manage their a
 10. Backend Setup:
   * Navigate to the backend directory.
   * Install dependencies:
-   ```sh
-   npm install node@latest
-   ```
-   ```sh
-   npm install express, sqlite3
-   ```
-   ```sh
-   npm install
-   ```
+     ```sh
+     npm install node@latest
+     ```
+     ```sh
+     npm install express, sqlite3
+     ```
+     ```sh
+     npm install
+     ```
 11. Database Configuration:
   * Set up the SQLLite3 database.
   * Execute the SQL scripts in the `database` directory to create the necessary tables.
 12. Run the Backend:
-   ```sh
-   npm run start
-   ```
+     ```sh
+     npm run start
+     ```
   
 <p align="right">(<a href="#top">back to top</a>)</p>
 
