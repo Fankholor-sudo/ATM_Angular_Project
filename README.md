@@ -65,7 +65,6 @@ allowing them to perform various transactions, view balances, and manage their a
    ```sh
    npx cap init
    ```
-<p align="right">(<a href="#top">back to top</a>)</p>
 4. Install Android and iOS platforms:
    ```sh
    npm i @capacitor/android @capacitor/ios
