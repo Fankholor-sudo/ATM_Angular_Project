@@ -57,6 +57,8 @@ allowing them to perform various transactions, view balances, and manage their a
 
    ```sh
    npm i @capacitor/core
+   ```
+   ```sh
    npm i -D @capacitor/cli
    ```
 3. Initialise Capacitor:
@@ -70,6 +72,8 @@ allowing them to perform various transactions, view balances, and manage their a
 5. Add Android and iOS:
    ```sh
    npx cap add android
+   ```
+   ```sh
    npx cap add ios
    ```
 6. Sync web code to native project:
