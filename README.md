@@ -47,66 +47,66 @@ allowing them to perform various transactions, view balances, and manage their a
 2. Frontend Setup::
    * Navigate to the `frontend` directory.
    * Install dependencies:
-   ``sh
+   ```sh
    npm install
-   ``
+   ```
    
-   ``sh
+   ```sh
    npm install -g @ionic/cli
-   ``
+   ```
 
-   ``sh
+   ```sh
    npm i @capacitor/core
    npm i -D @capacitor/cli
-   ``
+   ```
 3. Initialise Capacitor:
-   ``sh
+   ```sh
    npx cap init
-   ``
+   ```
 4. Install Android and iOS platforms:
-   ``sh
+   ```sh
    npm i @capacitor/android @capacitor/ios
-   ``
+   ```
 5. Add Android and iOS:
-   ``sh
+   ```sh
    npx cap add android
    npx cap add ios
-   ``
+   ```
 6. Sync web code to native project:
-   ``sh
+   ```sh
    npx cap sync
-   ``
+   ```
 7. Run Ios:
-   ``sh
+   ```sh
    ionic capacitor run ios --livereload --external
-   ``
+   ```
 8. Run Android:
-   ``sh
+   ```sh
    ionic capacitor run android -l --external
-   ``
+   ```
 9. Run on web:
-   ``sh
+   ```sh
    ionic serve
-   ``
+   ```
 10. Backend Setup:
   * Navigate to the backend directory.
   * Install dependencies:
-   ``sh
+   ```sh
    npm install node@latest
-   ``
-   ``sh
+   ```
+   ```sh
    npm install express, sqlite3
-   ``
-   ``sh
+   ```
+   ```sh
    npm install
-   ``
+   ```
 11. Database Configuration:
   * Set up the SQLLite3 database.
   * Execute the SQL scripts in the `database` directory to create the necessary tables.
 12. Run the Backend:
-   ``sh
+   ```sh
    npm run start
-   ``
+   ```
   
 <p align="right">(<a href="#top">back to top</a>)</p>
 
