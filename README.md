@@ -1,7 +1,7 @@
 # ATM_Angular_Project
 
 #### Created: 2023
-#### Angular Project
+#### Tech Stack: Angular and TypeScript
 
 <!-- TABLE OF CONTENTS -->
 ### Table of Contents
